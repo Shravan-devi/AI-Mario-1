@@ -52,7 +52,13 @@ var gameConfig={
 /*====================================
 =            Game Status             =
 ====================================*/
-
+noseX = 0;
+noseY = 0;
+GameStatus="";
+function startGame(){
+ GameStatus= "start";
+ document.getElementById("status").innerHTML="Game is loading";
+}
 function game(){
 
   instializeInDraw();
